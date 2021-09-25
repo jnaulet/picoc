@@ -614,6 +614,8 @@ void DebugInit();
 void DebugCleanup();
 void DebugCheckStatement(struct ParseState *Parser);
 
+/* assert.c */
+extern struct LibraryFunction AssertFunctions[];
 
 /* stdio.c */
 extern const char StdioDefs[];

@@ -10,6 +10,7 @@
 /* initialise the built-in include libraries */
 void IncludeInit(Picoc *pc)
 {
+    IncludeRegister(pc, "assert.h", NULL, &AssertFunctions[0], NULL);
 #ifndef BUILTIN_MINI_STDLIB
     IncludeRegister(pc, "ctype.h", NULL, &StdCtypeFunctions[0], NULL);
     IncludeRegister(pc, "errno.h", &StdErrnoSetupFunc, NULL, NULL);
